@@ -50,6 +50,7 @@ def read_version_from_file(file: str) -> str:
 
 __version__ = read_version_from_file('laa/laa.py')
 
+TEST_REQUIREMENTS = [] + read_requirements_from_file('test-requirements.txt')
 
 setup(
     name='laa',
@@ -72,5 +73,5 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
     install_requires=[],
-    tests_require=read_requirements_from_file('test-requirements.txt'),
+    tests_require=TEST_REQUIREMENTS,
 )
