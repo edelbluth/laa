@@ -28,7 +28,7 @@ import types
 
 
 __author__ = 'Jürgen Edelbluth'
-__version__ = '0.0.1'
+__version__ = '0.1.0'
 
 
 def lazy_all(list_of_conditions: list) -> bool:
