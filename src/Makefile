@@ -28,4 +28,3 @@ test: pylint coverage
 
 report:
 	$(COVERAGE_REPORT)
-
