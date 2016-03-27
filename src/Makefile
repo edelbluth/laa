@@ -1,6 +1,6 @@
 PYTHON_SETUP_PY = python setup.py
 PYLINT = pylint
-COVERAGE_RUN = coverage run --rcfile=coverage.rc -m doctest -vv
+COVERAGE_RUN = coverage run --rcfile=coverage.rc -m doctest
 COVERAGE_REPORT = coverage report
 
 .PHONY: ci clean dist pylint coverage test report
