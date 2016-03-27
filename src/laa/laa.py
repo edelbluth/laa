@@ -5,6 +5,27 @@ This combines the principle of short circuit evaluation with the advantages of a
 Details (german):
 https://juergen.rocks/art/python-any-all-lazy-short-circuit-evaluation.html
 
+Examples from the Blog Post:
+
+The not-working reason for this module:
+
+>>> x = None
+>>> if all([x is not None, len(x) > 10]):
+...     print('ok')
+... else:
+...     print('nah')
+Traceback (most recent call last):
+...
+TypeError: object of type 'NoneType' has no len()
+
+The working example with `lazy_all`:
+
+>>> x = None
+>>> if lazy_all([lambda: x is not None, lambda: len(x) > 10]):
+...     print('ok')
+... else:
+...     print('nah')
+nah
 
 License:
 ========
