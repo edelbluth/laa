@@ -63,7 +63,7 @@ setup(
     author_email='dev@juergen.rocks',
     url='https://github.com/edelbluth/laa',
     download_url='https://github.com/edelbluth/laa/tarball/v' + __version__,
-    keywords=['protection', 'redis', 'django', 'ban', 'filter'],
+    keywords=['any', 'all', 'lazy', 'short circuit', 'sce', 'short circuit evaluation', 'lambda'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
