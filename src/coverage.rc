@@ -1,5 +1,5 @@
 [run]
-source = .
+source = ./laa/
 
 [report]
 exclude_lines =
